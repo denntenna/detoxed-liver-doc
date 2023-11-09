@@ -8,6 +8,7 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
+  pathPrefix: `/detoxed-liver-doc`,
   siteMetadata: {
     title: `Detoxed Liver Doc`,
     author: {
