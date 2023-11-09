@@ -32,7 +32,7 @@ const Bio = () => {
 
   return (
     <div className="bio">
-      <StaticImage
+      {/* <StaticImage
         className="bio-avatar"
         layout="fixed"
         formats={["auto", "webp", "avif"]}
@@ -41,14 +41,24 @@ const Bio = () => {
         height={50}
         quality={95}
         alt="Profile picture"
-      />
+      /> */}
       {author?.name && (
         <p>
           Written by <strong>{author.name}</strong> {author?.summary || null}
           {` `}
+          <br />
           <a href={`https://twitter.com/${social?.twitter || ``}`}>
             You should follow them on Twitter
           </a>
+          <br /> <br />
+          <p>
+            The prompt to ChatGPT was "Can you rephrase the essay below in a way
+            that it will not offend puritanical conservative irrational people?
+            You can use the tone of a friendly middle school teacher. You cant
+            use expletives or abuse anyone. It would be nice if you wrote it in
+            short paragraphs so I could turn them into messages to share on a
+            chat app like whatsapp."
+          </p>
         </p>
       )}
     </div>
